@@ -63,7 +63,7 @@ ruby analyze_save.rb -c SUIDATA2.CIM
 
 This writes two CSV files:
 
-- `SUIDATA2_CIM_prefectures.csv``
+- `SUIDATA2_CIM_prefectures.csv`
 - `SUIDATA2_CIM_heroes.csv`
 
 ## Installing Ruby
