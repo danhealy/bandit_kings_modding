@@ -2,7 +2,7 @@
 
 A complete rework of **Scenario 2** for *Bandit Kings of Ancient China*.
 
-This mod reshuffles the map, activates every hero in the game, and creates 11 new player-style factions from the original seven starting heroes plus the four strongest non-starting heroes. The result is a much more open, crowded sandbox where nearly every character is on the board at once.
+This mod reshuffles the map, activates every hero in the game, and creates 11 new player-style factions from the original seven starting heroes plus the four strongest non-starting heroes. The result is a much more open, but crowded sandbox where every hero is on the board at once.
 
 ## What changes
 
@@ -64,8 +64,6 @@ ruby examples/dans_custom_scenario/dans_custom_scenario.rb \
 3. Copy it into the game's `Data` folder, replacing the original.
 4. Start the game and choose **Scenario 2**.
 
-If you are playing on a classic Mac or emulator and the game does not recognize the file, you may need to use **FileTyper** to copy the file type/creator codes from the original `SUIDATA2.CIM` onto the new file. On modern systems the `.CIM` extension is usually enough.
-
 ## Design notes
 
 - **Why Scenario 2?** It is the easiest scenario to customize because it already has a clear set of seven playable starting heroes and a well-known map layout.
@@ -84,4 +82,4 @@ If you are playing on a classic Mac or emulator and the game does not recognize 
 - **The script says it cannot find `SUIDATA2.CIM`.** Make sure a copy of the original scenario 2 file is in the project root, or pass `-i` with the full path to the file.
 - **The output file is exactly the same size as the input.** That is correct. The toolkit validates a 21,122-byte round-trip to ensure no data was accidentally lost.
 - **The game crashes on scenario start.** Most likely a leader flag or ruler byte is inconsistent. Restore your backup and make sure you are feeding in an unmodified original `SUIDATA2.CIM`.
-- **The game does not see the new file.** On classic Mac you may need to set the file type/creator with FileTyper. On modern Windows/macOS/Linux, make sure the file is named exactly `SUIDATA2.CIM` and is in the game's `Data` folder.
+- **The game does not see the new file.** Make sure the file is named exactly `SUIDATA2.CIM` and is in the game's `Data` folder.
