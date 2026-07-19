@@ -172,19 +172,12 @@ module BanditKings
       end
 
       # ------------------------------------------------------------------
-      # Step 6: rewrite the scenario's leader table to be exactly the
-      # 11 new faction leaders (followed by the standard 255 empty-slot
-      # sentinel the game uses to mark the end of the table). set_leader_table
-      # also recomputes the per-leader flag and D bytes based on whether
-      # each leader is already settled in a prefecture -- those flags are
-      # finalized in step 9, when each leader is installed as the ruler of
-      # a new-faction prefecture.
-      #
-      # make_ruler (called in step 9) sets the hero's faction to their own
-      # ID and loyalty to 0, which is what "loyal to themselves, no
-      # previous allegiance" means in the spec.
+      # Step 6: record the 11 new faction leaders in the scenario's leader
+      # table. The actual flags and D/status bytes for each leader are set
+      # below, after the leaders have been installed as rulers of their
+      # prefectures in step 9.
       # ------------------------------------------------------------------
-      editor.set_leader_table(leaders + [255])
+      leader_ids = leaders + [255]
 
       # ------------------------------------------------------------------
       # Step 7: max out Gao Qiu and move him into his stronghold. He keeps
@@ -236,6 +229,11 @@ module BanditKings
           flood: 50, land: 10, wealth: 10, support: 0
         )
       end
+
+      # Now that every leader has been installed as the ruler of their
+      # assigned prefecture, write the leader table so the flags and D/status
+      # bytes correctly mark them as settled rulers.
+      editor.set_leader_table(leader_ids)
 
       # ------------------------------------------------------------------
       # Step 10: blank out every prefecture that isn't a new-faction
