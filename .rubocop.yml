@@ -1,0 +1,108 @@
+AllCops:
+  TargetRubyVersion: 3.4
+  NewCops: enable
+  SuggestExtensions: false
+
+# This is a reverse-engineering/modding project, not a published library.
+# Keep the config focused on real problems rather than style micro-optimizations.
+Style/StringLiterals:
+  Enabled: false
+Style/StringLiteralsInInterpolation:
+  Enabled: false
+Style/NumericPredicate:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/SpecialGlobalVars:
+  Enabled: false
+Style/IfUnlessModifier:
+  Enabled: false
+Style/TernaryParentheses:
+  Enabled: false
+Style/WordArray:
+  Enabled: false
+Style/SymbolArray:
+  Enabled: false
+Style/HashSyntax:
+  Enabled: false
+
+Layout/EmptyLineAfterGuardClause:
+  Enabled: false
+Layout/LineLength:
+  Max: 120
+Layout/SpaceInsideHashLiteralBraces:
+  Enabled: false
+
+Lint/AmbiguousOperatorPrecedence:
+  Enabled: false
+Lint/AmbiguousRange:
+  Enabled: false
+
+Style/BitwisePredicate:
+  Enabled: false
+Style/FormatStringToken:
+  Enabled: false
+
+Naming/PredicateMethod:
+  Enabled: false
+
+Naming/PredicatePrefix:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+Metrics/ClassLength:
+  Enabled: false
+Metrics/BlockLength:
+  Enabled: false
+Metrics/ModuleLength:
+  Enabled: false
+Metrics/AbcSize:
+  Enabled: false
+Metrics/CyclomaticComplexity:
+  Enabled: false
+Metrics/PerceivedComplexity:
+  Enabled: false
+Metrics/ParameterLists:
+  Enabled: false
+
+Lint/ScriptPermission:
+  Enabled: false
+
+Naming/VariableNumber:
+  Enabled: false
+
+Style/RedundantFormat:
+  Enabled: false
+
+Style/MutableConstant:
+  Enabled: false
+Naming/AccessorMethodName:
+  Enabled: false
+Style/HashLikeCase:
+  Enabled: false
+Style/ComparableBetween:
+  Enabled: false
+Style/Next:
+  Enabled: false
+Style/IdenticalConditionalBranches:
+  Enabled: false
+Lint/DuplicateBranch:
+  Enabled: false
+Lint/UnusedBlockArgument:
+  Enabled: false
+
+Style/Semicolon:
+  Enabled: false
+Layout/IndentationWidth:
+  Enabled: false
+Layout/ElseAlignment:
+  Enabled: false
+Layout/EndAlignment:
+  Enabled: false
+Layout/EmptyLines:
+  Enabled: false
+Layout/ExtraSpacing:
+  Enabled: false
