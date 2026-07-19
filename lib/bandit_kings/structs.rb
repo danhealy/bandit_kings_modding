@@ -653,7 +653,12 @@ module BanditKings
 end
 
 if __FILE__ == $0
-  file = ARGV[0] || "/home/dan/sandbox/bandit_kings_modding/scen_1_shi_lin_wu"
+  file = ARGV[0]
+  unless file
+    puts "Usage: ruby #{__FILE__} <save_file>"
+    exit 1
+  end
+
   save = BanditKings::SaveFile.read(file)
   save.print_memory_map
 

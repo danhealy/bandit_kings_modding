@@ -7,6 +7,15 @@
 
 require_relative "../lib/bandit_kings"
 
+PROJECT_ROOT = File.expand_path("..", __dir__)
+
+def scenario_defaults(output_name)
+  {
+    input: File.join(PROJECT_ROOT, "SUIDATA2.CIM"),
+    output: File.join(__dir__, output_name)
+  }
+end
+
 GAO_QIU_ID = 0
 STARTING_HERO_IDS = [4, 5, 1, 6, 2, 3, 10].freeze
 NPC_IDS = [9, 16, 12].freeze
@@ -16,7 +25,7 @@ NPC_IDS = [9, 16, 12].freeze
 # ---------------------------------------------------------------------------
 class AllFacilitiesAllPrefectures < BanditKings::ScenarioScript
   def defaults
-    {input: "SUIDATA2.CIM", output: "SUIDATA2_ALL_FACILITIES.CIM"}
+    scenario_defaults("SUIDATA2_ALL_FACILITIES.CIM")
   end
 
   def apply(editor)
@@ -29,7 +38,7 @@ end
 # ---------------------------------------------------------------------------
 class AllHeroes < BanditKings::ScenarioScript
   def defaults
-    {input: "SUIDATA2.CIM", output: "SUIDATA2_ALL_HEROES.CIM"}
+    scenario_defaults("SUIDATA2_ALL_HEROES.CIM")
   end
 
   def apply(editor)
@@ -51,7 +60,7 @@ class SpreadStartingHeroes < BanditKings::ScenarioScript
   TARGET_PREFECTURES = [1, 3, 22, 44, 41, 40, 16].freeze
 
   def defaults
-    {input: "SUIDATA2.CIM", output: "SUIDATA2_SPREAD_HEROES.CIM"}
+    scenario_defaults("SUIDATA2_SPREAD_HEROES.CIM")
   end
 
   def apply(editor)
@@ -67,7 +76,7 @@ end
 # ---------------------------------------------------------------------------
 class DemoteNPCs < BanditKings::ScenarioScript
   def defaults
-    {input: "SUIDATA2.CIM", output: "SUIDATA2_DEMOTE_NPCS.CIM"}
+    scenario_defaults("SUIDATA2_DEMOTE_NPCS.CIM")
   end
 
   def apply(editor)

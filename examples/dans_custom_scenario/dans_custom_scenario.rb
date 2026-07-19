@@ -118,7 +118,11 @@ module BanditKings
     SHUFFLE_SEED = 42
 
     def defaults
-      {input: "../../SUIDATA2.CIM", output: "SUIDATA2_NEW.CIM"}
+      project_root = File.expand_path("../..", __dir__)
+      {
+        input: File.join(project_root, "SUIDATA2.CIM"),
+        output: File.join(__dir__, "SUIDATA2_NEW.CIM")
+      }
     end
 
     def apply(editor)
