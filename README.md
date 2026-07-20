@@ -159,3 +159,8 @@ analyze_save.rb                # Command-line inspector / CSV exporter.
 - **Always back up your original `.CIM` files** before replacing them.
 - The toolkit validates that the output file is exactly the same size as the input (21,122 bytes), but it cannot guarantee the game will load every possible change. If the game crashes, restore your backup and make smaller edits. Sometimes crashes here can cause your game executable or Data folder to be corrupted, it's good practice to replace those files with fresh copies if you encounter a crash.
 - The original `SUIDATA2.CIM` must be in this project directory (or you must pass the full path with `-i`).
+
+## Other Links
+
+[https://github.com/tzengyuxio/kaodata](https://github.com/tzengyuxio/kaodata)
+[https://github.com/chrisaacson69/bk-decompiler](https://github.com/chrisaacson69/bk-decompiler)
