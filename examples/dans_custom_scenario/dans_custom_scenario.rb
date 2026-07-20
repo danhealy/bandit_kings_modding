@@ -99,8 +99,8 @@ module BanditKings
     GAO_QIU_ID = 0
 
     # The seven scenario-2 starting heroes the player may pick, as 0-based
-    # hero IDs: Lu Zhi Shen (4), Shi Jin (5), Song Jiang (1), Lin Chong (6),
-    # Wu Song (2), Yang Zhi (3), Chao Gai (10).
+    # hero IDs: Lin Chong (4), Wu Song (5), Lu Zhi Shen (1), Yang Zhi (6),
+    # Shi Jin (2), Song Jiang (3), Chao Gai (10).
     STARTING_HERO_IDS = [4, 5, 1, 6, 2, 3, 10].freeze
 
     # The eleven prefectures the 11 new faction leaders are assigned to,

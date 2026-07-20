@@ -10,19 +10,19 @@ This mod reshuffles the map, activates every hero in the game, and creates 11 ne
 
 The mod promotes the seven original scenario-2 selectable heroes and the four strongest remaining heroes to full faction rulers. Each gets their own prefecture:
 
-| Leader slot | Starting hero | Target prefecture |
-|-------------|---------------|-------------------|
-| 1 | Lu Zhi Shen | 1 |
-| 2 | Shi Jin | 3 |
-| 3 | Song Jiang | 6 |
-| 4 | Lin Chong | 22 |
-| 5 | Wu Song | 34 |
-| 6 | Yang Zhi | 48 |
+| Leader slot | Leader | Target prefecture |
+|-------------|--------|-------------------|
+| 1 | Lin Chong | 1 |
+| 2 | Wu Song | 3 |
+| 3 | Lu Zhi Shen | 6 |
+| 4 | Yang Zhi | 22 |
+| 5 | Shi Jin | 34 |
+| 6 | Song Jiang | 48 |
 | 7 | Chao Gai | 44 |
-| 8 | 4th strongest non-starter | 41 |
-| 9 | 3rd strongest non-starter | 40 |
-| 10 | 2nd strongest non-starter | 16 |
-| 11 | Strongest non-starter | 14 |
+| 8 | Hua Rong (strongest non-starter) | 41 |
+| 9 | Guan Sheng (2nd strongest non-starter) | 40 |
+| 10 | Wang Jin (3rd strongest non-starter) | 16 |
+| 11 | Dong Ping (4th strongest non-starter) | 14 |
 
 Each leader is given **100/80/70** attributes and **100/95/90** personality stats, preserving each hero's natural ordering of strengths. For example, a hero whose highest stat is Wisdom and lowest is Dexterity becomes `Wisdom=100, Strength=80, Dexterity=70`.
 
